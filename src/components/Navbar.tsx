@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <header className="flex justify-between items-center bg-white p-4">
       <a href="/" className="text-xl font-bold">
-        <img src="/sample-logo.png" alt="Logo" width={40} height={40} />
+        <h1>Header Placeholder</h1>
       </a>
       <nav>
         <ul className="flex space-x-4">
