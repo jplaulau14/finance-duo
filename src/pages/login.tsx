@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { useState, FormEvent } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
+import Link from 'next/link'
 
 const Login = () => {
   const router = useRouter();
@@ -47,7 +48,7 @@ const Login = () => {
         </button>
       </form>
       <p>
-        Don't have an account? <a href="/signup">Sign up</a>
+        Don't have an account? <Link href="/signup">Sign up</Link>
       </p>
     </div>
   );

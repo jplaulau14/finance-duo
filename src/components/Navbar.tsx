@@ -2,6 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import { auth } from "../firebase"; // Import auth from firebase
 import { signOut } from "firebase/auth"; // Import signOut function
+import Link from 'next/link'
 
 const Navbar = () => {
   const router = useRouter();
@@ -18,38 +19,38 @@ const Navbar = () => {
 
   return (
     <header className="flex justify-between items-center bg-white p-4">
-      <a href="/" className="text-xl font-bold">
+      <Link href="/" className="text-xl font-bold">
         <h1>Header Placeholder</h1>
-      </a>
+      </Link>
       <nav>
         <ul className="flex space-x-4">
           <li>
-            <a href="#">Transactions</a>
+            <Link href="#">Transactions</Link>
           </li>
           <li>
-            <a href="#">Accounts</a>
+            <Link href="#">Accounts</Link>
           </li>
           <li>
-            <a href="#">Budgeting</a>
+            <Link href="#">Budgeting</Link>
           </li>
           <li>
-            <a href="#">Goals</a>
+            <Link href="#">Goals</Link>
           </li>
           <li>
-            <a href="#">Wishlists</a>
+            <Link href="#">Wishlists</Link>
           </li>
           <li>
             <div className="relative">
               <button>Menu</button>
               <ul className="absolute mt-2 bg-white shadow-lg rounded p-2 space-y-2">
                 <li>
-                  <a href="#">Your Profile</a>
+                  <Link href="#">Your Profile</Link>
                 </li>
                 <li>
-                  <a href="#">Partner's Profile</a>
+                  <Link href="#">Partner's Profile</Link>
                 </li>
                 <li>
-                  <a href="#">Settings</a>
+                  <Link href="#">Settings</Link>
                 </li>
                 <li>
                   <button onClick={handleLogout}>Logout</button>

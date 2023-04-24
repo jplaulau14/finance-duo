@@ -4,6 +4,8 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useAuth } from "../auth/AuthProvider";
 import { doc, getDoc } from "firebase/firestore";
 import { db, auth } from "../firebase";
+import Link from 'next/link'
+
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -74,7 +76,7 @@ const SignUp = () => {
         </button>
       </form>
       <p>
-        Already have an account? <a href="/login">Log in</a>
+        Already have an account? <Link href="/login">Log in</Link>
       </p>
     </div>
   );
