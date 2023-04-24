@@ -97,7 +97,7 @@ const AddAccountForm: React.FC<AddAccountFormProps> = ({ show, onClose }) => {
           </h1>
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="flex flex-col mb-4">
-              <label htmlFor="accountType" className="mb-1">
+              <label htmlFor="accountType" className="mb-1 text-black">
                 Account Type
               </label>
               <Select
@@ -111,7 +111,7 @@ const AddAccountForm: React.FC<AddAccountFormProps> = ({ show, onClose }) => {
               />
             </div>
             <div className="flex flex-col mb-4">
-              <label htmlFor="accountName" className="mb-1">
+              <label htmlFor="accountName" className="mb-1 text-black">
                 Account Name
               </label>
               <input
@@ -123,7 +123,7 @@ const AddAccountForm: React.FC<AddAccountFormProps> = ({ show, onClose }) => {
               />
             </div>
             <div className="flex flex-col mb-4">
-              <label htmlFor="initialAmount" className="mb-1">
+              <label htmlFor="initialAmount" className="mb-1 text-black">
                 Initial Amount
               </label>
               <input
@@ -136,7 +136,7 @@ const AddAccountForm: React.FC<AddAccountFormProps> = ({ show, onClose }) => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="currency" className="mb-1">
+              <label htmlFor="currency" className="mb-1 text-black">
                 Currency
               </label>
               <Select
