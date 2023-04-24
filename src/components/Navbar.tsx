@@ -36,7 +36,7 @@ const Navbar = () => {
         <Link href="#">Wishlists</Link>
       </li>
       <li className="hidden md:block">
-        <Link href="#">Partner's Dashboard</Link>
+        <Link href="#">Partner&apos;s Dashboard</Link>
       </li>
     </>
   );
