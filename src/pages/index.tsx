@@ -1,9 +1,10 @@
 // src/pages/index.tsx
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { useAuth } from '../auth/AuthProvider';
-import Navbar from '../components/Navbar';
-import AccountOverview from '../components/AccountOverview';
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import { useAuth } from "../auth/AuthProvider";
+import Dashboard from "@/components/Dashboard";
+import Head from "next/head";
+import Navbar from "@/components/Navbar";
 
 const Home = () => {
   const { user, loading } = useAuth();
@@ -11,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     if (!loading && !user) {
-      router.push('/signup');
+      router.push("/signup");
     }
   }, [loading, user, router]);
 
@@ -20,12 +21,13 @@ const Home = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
+      <Head>
+        <title>Finance Duo</title>
+      </Head>
       <Navbar />
-      <main className="flex-grow p-4">
-        <AccountOverview />
-      </main>
-    </div>
+      <Dashboard />
+    </>
   );
 };
 
