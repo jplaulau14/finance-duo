@@ -47,7 +47,7 @@ const Navbar = () => {
                   <Link href="#">Your Profile</Link>
                 </li>
                 <li>
-                  <Link href="#">Partner's Profile</Link>
+                  <Link href="#">Partner&apos;s Profile</Link>
                 </li>
                 <li>
                   <Link href="#">Settings</Link>
